@@ -5,251 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
-    <title>Johnkennedy Portfolio</title>
+    <title>Johnkennedy Ogu | Software Engineer</title>
   </head>
 
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Ogu Johnkennedy</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav>
+      <h1>JOHNKENNEDY OGU</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
     </nav>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Ogu Johnkennedy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <ul>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section class="hero" id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/uzo4.jpg" alt="Johnkennedy profile picture" />
-      </div>
-      <div class="bio animate__animated animate__shakeX section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ogu Johnkennedy</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('https://docs.google.com/document/d/10Jn9XiLt90Q4z3z-GMr1YAhRpxz-oS37VqgHD-B_LtQ/edit?usp=sharing', '_blank')">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/ogu-johnkennedy-bb7424100', '_blank')" />
-          <img src="./assets/github.png" alt="My Github" class="icon" onclick="window.open('https://github.com/mathjken', '_blank')" />
-        </div>
+    <section class="hero" id="about">
+      <img src="assets/images/wfh_1.svg" alt="Johnkennedy Ogu" loading="lazy" class="hero-img" />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">Professional Profile</h2>
+        <p class="bio-text">
+          IT Graduate with an MSc in Advanced Computer Science and a BSc in Mathematics. 
+          <strong>Azure Fundamentals (AZ-900)</strong> certified with a unique blend of software development, 
+          IT infrastructure support, and mathematical modeling.
+        </p>
       </div>
     </section>
 
-    <section class="more-about" id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h2 class="title">About Me</h2>
-      
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/uzo2.jpg" alt="Profile picture" class="about-pic" />
-        </div>
-        
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>2+ years <br />Fullstack Development</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>B.Sc. Mathematics</p>
-            </div>
-          </div>
-          
-          <div class="text-container">
-            <p>
-              I specialize in backend engineering, proficiently using JavaScript (Node.js) and the Express.js framework as well as Python and the Flask framework. 
-              I have practical knowledge of working with Linux, web stack debugging, and DevOps practices. 
-              I am also skilled in Bash scripting and database management using MySQL and MongoDB.
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="more-about">
+      <h2>Background & Expertise</h2>
+      <p>
+        I have a proven ability to troubleshoot complex technical systems, manage data acquisition, and collaborate in Agile environments. 
+        I am highly experienced in the full <strong>Software Development Lifecycle (SDLC)</strong> through intensive bootcamps and industry simulations.
+      </p>
+      <p>
+        My dual background in Mathematics and Computer Science allows me to approach programming with high analytical precision, 
+        ensuring that the systems I build are both efficient and scalable.
+      </p>
     </section>
 
     <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
+      <h2 class="skill-header">Technical Stack</h2>
       <div class="skills-wrapper">
         <div class="first-set animate__animated animate__pulse">
-          <img src="assets/icons/icons8-html-5.svg" alt="HTML" class="icon icon-card" />
-          <img src="assets/icons/icons8-css3.svg" alt="CSS" class="icon icon-card" />
-          <img src="assets/icons/icons8-javascript.svg" alt="JS" class="icon icon-card" />
+          <img src="assets/icons/icons8-html-5.svg" alt="HTML5" title="HTML5" class="icon icon-card" />
+          <img src="assets/icons/icons8-css3.svg" alt="CSS3" title="CSS3" class="icon icon-card" />
+          <img src="assets/icons/icons8-javascript.svg" alt="JavaScript" title="JavaScript" class="icon icon-card" />
         </div>
         <div class="second-set animate__animated animate__pulse">
-          <img src="assets/icons/icons8-bootstrap.svg" alt="Bootstrap" class="icon icon-card" />
-          <img src="assets/icons/icons8-react-native.svg" alt="React" class="icon icon-card" />
-          <img src="assets/icons/icons8-git.svg" alt="Git" class="icon icon-card" />
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Experienced</p></div></article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node JS</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git</h3><p>Experienced</p></div></article>
-            </div>
-          </div>
+          <img src="assets/icons/icons8-bootstrap.svg" alt="ASP.NET / Bootstrap" title="Bootstrap" class="icon icon-card" />
+          <img src="assets/icons/icons8-react-native.svg" alt="React" title="React" class="icon icon-card" />
+          <img src="assets/icons/icons8-git.svg" alt="Git" title="Git" class="icon icon-card" />
         </div>
       </div>
     </section>
 
     <section class="projects" id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      
-      <div class="projects-container" style="display: flex; flex-direction: column; gap: 30px; align-items: center;">
+      <h2 class="projects-title">Recent Projects</h2>
+      <div class="projects-container">
         
-        <div class="project-container project-card details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="AirBnB Clone" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">AirBnB Clone</h2>
+        <div class="project-container project-card">
+          <img src="assets/images/expenseTracker.png" alt="Expense Tracker" class="project-pic" />
+          <h3 class="project-title">Expense Tracker</h3>
           <p class="project-details">
-            Built using Python, Flask, and jQuery. Implements AJAX and JSON to load data asynchronously with a MySQL database.
+            A specialized application for monitoring financial transactions and personal budgeting with real-time data tracking.
           </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/AirBnB_clone_v4', '_blank')">Github</button>
-            <button class="btn btn-color-2 project-btn">Live Demo</button>
+          <a href="#" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-container project-card">
+          <img src="assets/images/netflixClone.png" alt="Netflix Clone" class="project-pic" />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            An industry-standard UI simulation focusing on responsive design, dynamic sliders, and high-fidelity CSS styling.
+          </p>
+          <a href="#" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-container project-card">
+          <img src="assets/images/greenyEarth.png" alt="Greeny Earth" class="project-pic" />
+          <h3 class="project-title">Greeny Earth</h3>
+          <p class="project-details">
+            A sustainability-focused platform designed to track environmental impact through modern web technologies.
+          </p>
+          <a href="#" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-container project-card">
+          <img src="assets/images/uzoma.jpg" alt="Uzoma Fashion App" class="project-pic" />
+          <h3 class="project-title">Uzoma Fashion App</h3>
+          <p class="project-details">
+            A full-stack fashion web application built with <strong>ASP.NET</strong> and <strong>C#</strong> for robust backend logic, and <strong>React</strong> for a dynamic frontend.
+          </p>
+          <div class="project-links-container">
+            <a href="https://github.com/Mathjken/uzoma-" target="_blank" class="project-link">GitHub</a>
+            <a href="http://localhost:5173/register" target="_blank" class="project-link">Demo</a>
           </div>
         </div>
 
-        <div class="project-container project-card details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.jpg" alt="BaseAnchorage" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">BaseAnchorage</h2>
-          <p class="project-details">
-            An Inventory Management Web App for tracking products and orders, categorizing items, and generating reports.
-          </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/Base-Anchorage-Inventory', '_blank')">Github</button>
-            <button class="btn btn-color-2 project-btn">Live Demo</button>
-          </div>
-        </div>
-
-        <div class="project-container project-card details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.jpg" alt="MoAnJo" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">MoAnJo</h2>
-          <p class="project-details">
-            An online shopping platform built with Flask, SQLAlchemy, React JS, and Redux-Toolkits.
-          </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/MoAnJo', '_blank')">Github</button>
-            <button class="btn btn-color-2 project-btn">Live Demo</button>
-          </div>
-        </div>
-
-        <div class="project-container project-card details-container color-container">
-          <div class="article-container">
-            <img src="assets/images/project4.png" alt="E-Commerce Store" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">E-Commerce Store</h2>
-          <p class="project-details">
-            Full-stack e-commerce platform with authentication, secure payments, and a dynamic product catalog.
-          </p>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken', '_blank')">Github</button>
-            <button class="btn btn-color-2 project-btn">Live Demo</button>
-          </div>
-        </div>
-        
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
+      <h2>Get In Touch</h2>
       <div class="contact-form-container">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <p><strong>Email:</strong> ogujohnkennedy@gmail.com</p>
+            <p><strong>Phone:</strong> 07928014708</p>
+        </div>
         <form action="https://formspree.io/f/xyylnggw" method="POST" class="contact-form">
           <div class="form-control">
             <label for="name">Name</label>
-            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+            <input type="text" id="name" name="sender-name" placeholder="Your Name" class="input-field" required />
           </div>
           <div class="form-control">
             <label for="email">Email</label>
-            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+            <input type="email" id="email" name="sender-email" placeholder="Your Email" class="input-field" required />
           </div>
           <div class="form-control">
             <label for="message">Message</label>
-            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+            <textarea id="message" name="message" placeholder="How can I help you?" class="input-field" required></textarea>
           </div>
-          <input type="submit" value="Submit" id="submit-btn" class="btn btn-color-1 submit-btn" />
+          <input type="submit" value="Send Message" class="submit-btn" />
         </form>
       </div>
     </section>
 
     <div class="socials">
-      <a href="#"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" class="socicon" /></a>
-      <a href="#"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" class="socicon" /></a>
-      <a href="#"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" class="socicon" /></a>
-      <a href="#"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+      <a href="https://linkedin.com/in/ogu-johnkennedy" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" class="socicon" /></a>
+      <a href="https://github.com/Mathjken" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+      <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" class="socicon" /></a>
+      <a href="#" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" class="socicon" /></a>
     </div>
 
+    <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="Scroll Up" /></i>
+
     <footer>
-      <p class="copy">&copy; Copyright 2026</p>
+      <p class="copy">&copy; 2026 Johnkennedy Ogu | Software Engineer</p>
       <p class="copy">
-        Built with &#x2661; by
-        <a href="https://twitter.com/christheclar" target="_blank">Ogu Johnkennedy (ChrisTheclar)</a>
+        Built with &#x2661; by <a href="https://github.com/Mathjken" target="_blank">Johnkennedy Ogu</a>
       </p>
     </footer>
 
     <script src="assets/js/app.js"></script>
-    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
