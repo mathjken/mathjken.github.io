@@ -49,3 +49,92 @@
   border: 2px solid var(--secondary-color);
   transform: scale(1.02);
 }
+
+/* ===============================
+   LARGE SCREENS (≤ 1400px)
+================================ */
+@media screen and (max-width: 1400px) {
+  .hero {
+    min-height: 80vh;
+    padding-bottom: 4rem;
+  }
+
+  .projects-container {
+    gap: 1.25rem;
+  }
+}
+
+/* ===============================
+   TABLET SCREENS (≤ 1200px)
+================================ */
+@media screen and (max-width: 1200px) {
+  nav ul {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 260px;
+    margin-bottom: 2rem;
+  }
+
+  section {
+    padding: 2.5rem 5%;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+/* ===============================
+   MOBILE SCREENS (≤ 600px)
+================================ */
+@media screen and (max-width: 600px) {
+  .hero {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .hero-img {
+    width: 220px;
+  }
+
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.25rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
