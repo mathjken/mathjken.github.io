@@ -1,35 +1,51 @@
-/* ... keep your existing general styles ... */
-
-/* UPDATED PROJECTS CONTAINER */
-#projects {
-  position: relative;
-  height: auto; /* Changed from 96vh to auto to allow for 4 cards */
-  padding-bottom: 5rem;
+/* Projects section */
+.projects {
+  background-color: var(--bg-color);
+  padding: 3rem 1rem;
 }
 
-/* This allows the 4 project cards to wrap onto two lines */
-#projects .about-containers {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center;
-  gap: 2rem;
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* Ensure project cards have a consistent width */
-#projects .details-container {
-  flex: 1 1 350px; /* Base width of 350px, can grow/shrink */
-  max-width: 450px;
-  min-height: 500px; /* Ensures cards are the same height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-img {
-  border-radius: 2rem;
+.project-pic {
   width: 100%;
-  height: 250px;
-  object-fit: cover; /* Keeps image from stretching */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* ... keep the rest of your existing CSS ... */
+.project-container {
+  text-align: center;
+}
+
+.project-title {
+  margin-top: 0.8rem;
+  font-weight: var(--bold-font);
+}
+
+.project-details {
+  font-size: 0.9rem;
+  margin: 0.6rem 0;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-link {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Highlight Uzoma */
+.featured-project {
+  border: 2px solid var(--secondary-color);
+  transform: scale(1.02);
+}

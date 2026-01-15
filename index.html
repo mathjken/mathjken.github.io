@@ -4,201 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johnkennedy Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Ogu Johnkennedy | Full-Stack Developer</title>
   </head>
+
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Ogu Johnkennedy</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <!-- Navbar -->
+    <nav>
+      <h1>OGU JOHNKENNEDY</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ogu Johnkennedy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <ul>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/uzo4.jpg" alt="Johnkennedy profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ogu Johnkennedy</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('https://docs.google.com/document/d/10Jn9XiLt90Q4z3z-GMr1YAhRpxz-oS37VqgHD-B_LtQ/edit?usp=sharing', '_blank')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/ogu-johnkennedy-bb7424100', '_blank')" />
-          <img src="./assets/github.png" alt="Github" class="icon" onclick="window.open('https://github.com/mathjken', '_blank')" />
-        </div>
+
+    <!-- Hero -->
+    <section class="hero" id="about">
+      <img src="assets/images/wfh_1.svg" alt="Ogu Johnkennedy" class="hero-img" />
+      <div class="bio animate__animated animate__fadeIn">
+        <h2>About Me</h2>
+        <p>
+          I’m a Full-Stack Developer building scalable web applications using
+          ASP.NET Core, PostgreSQL, React, and modern cloud tooling.
+        </p>
       </div>
     </section>
 
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/uzo2.jpg" alt="Profile picture" class="about-pic" />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>2+ years <br />Fullstack Development</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>B.Sc. Mathematics</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I specialize in backend engineering, proficiently using JavaScript (Node.js), Python (Flask), and ASP.NET Core. 
-              I have practical knowledge of Linux system administration, web stack debugging, and DevOps practices.
-            </p>
-          </div>
-        </div>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+      <div class="skills-wrapper">
+        <img src="assets/icons/icons8-html-5.svg" class="icon icon-card" />
+        <img src="assets/icons/icons8-css3.svg" class="icon icon-card" />
+        <img src="assets/icons/icons8-javascript.svg" class="icon icon-card" />
+        <img src="assets/icons/icons8-react-native.svg" class="icon icon-card" />
+        <img src="assets/icons/icons8-git.svg" class="icon icon-card" />
       </div>
     </section>
 
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>CSS</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>React</h3><p>Intermediate</p></div></article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Node JS</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>.NET Core</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PostgreSQL</h3><p>Intermediate</p></div></article>
-            </div>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Recent Projects</h2>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="assets/images/expenseTracker.png" class="project-pic" />
+          <h3>Expense Tracker</h3>
+          <p>Personal finance tracking app.</p>
+          <a href="#" class="project-link">View</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="assets/images/netflixClone.png" class="project-pic" />
+          <h3>Netflix Clone</h3>
+          <p>Streaming UI clone built with React.</p>
+          <a href="#" class="project-link">View</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="assets/images/greenyEarth.png" class="project-pic" />
+          <h3>Greeny Earth</h3>
+          <p>Environmental awareness website.</p>
+          <a href="#" class="project-link">View</a>
+        </div>
+
+        <!-- Project 4 — Uzoma -->
+        <div class="project-card featured-project">
+          <img src="assets/images/uzoma.jpg" class="project-pic" />
+          <h3>Uzoma (Fashion App)</h3>
+          <p>
+            Full-stack fashion ecommerce platform with ASP.NET Core API,
+            PostgreSQL, JWT auth, and React frontend.
+          </p>
+          <div class="project-links">
+            <a href="http://localhost:5173/register" class="project-link">Live</a>
+            <a
+              href="https://github.com/mathjken/uzoma"
+              class="project-link"
+              target="_blank"
+              >GitHub</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers project-grid-wrapper">
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/images/uzoma.jpg" alt="Uzoma Project" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Uzoma</h2>
-            <p>Fashion discovery platform with AI-assisted search. Built with ASP.NET Core Web API, EF Core, and SQL Server.</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/uzoma', '_blank')">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="window.open('http://localhost:5173/register', '_blank')">Local Demo</button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">AirBnB Clone</h2>
-            <p>Built using Python (Flask) and jQuery. Implements AJAX/JSON for asynchronous data loading and MySQL database.</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/AirBnB_clone_v4', '_blank')">Github</button>
-              <button class="btn btn-color-2 project-btn">Live Demo</button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-2.jpg" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">BaseAnchorage</h2>
-            <p>Inventory Management Web App for tracking products/orders and generating reports. Built for high efficiency.</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/Base-Anchorage-Inventory', '_blank')">Github</button>
-              <button class="btn btn-color-2 project-btn">Live Demo</button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-3.jpg" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">MoAnJo</h2>
-            <p>E-commerce platform using Flask and SQLAlchemy for the backend and React JS with Redux for the frontend.</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/mathjken/MoAnJo', '_blank')">Github</button>
-              <button class="btn btn-color-2 project-btn">Live Demo</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-          <p><a href="mailto:your-email@example.com">Email Me</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com/in/ogu-johnkennedy-bb7424100">LinkedIn</a></p>
-        </div>
-      </div>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch</h2>
+      <form
+        action="https://formspree.io/f/xyylnggw"
+        method="POST"
+        class="contact-form"
+      >
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <footer>
-      <p>Copyright &#169; 2026 Ogu Johnkennedy. All Rights Reserved.</p>
+      <p>&copy; 2026 Ogu Johnkennedy</p>
     </footer>
 
-    <script src="script.js"></script> 
+    <script src="assets/js/app.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
